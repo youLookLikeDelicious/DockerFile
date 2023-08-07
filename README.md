@@ -1,15 +1,24 @@
 # DockerFile
 
-## 构建php环境
+## Extension
 
-* GD
+* bcmath
+* cron
+* gd
   * png
   * webp
   * jpeg
   * ...
-* Redis
-* Supervisor
-* Cron
+* mongodb (disabled)
+* opcache
 * pdo_mysql
+* redis
+* supervisor
+* zip
 * ...
   
+## Build
+
+```bash
+docker build -t chaosxy/php:8.1.19-dev --target=composer -f .\php-fpm\dockerfile-php-8.1.19  .
+```

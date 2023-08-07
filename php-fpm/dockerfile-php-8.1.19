@@ -20,6 +20,7 @@ RUN apt-get update && apt-get install -y \
 	  && docker-php-ext-enable redis \
     && docker-php-ext-install opcache \
     && docker-php-ext-install zip
+# mongodb apt-get install libssl-dev && pecl install mongodb && docker-php-ext-enable mongodb
 
 FROM php as composer
 RUN php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.php');" \
