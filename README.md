@@ -20,5 +20,5 @@
 ## Build
 
 ```bash
-docker build -t chaosxy/php:8.3.14-dev --target=composer -f .\php-fpm\dockerfile-php:8.3.14  .
+docker build -t chaosxy/php:8.3.14-dev --target=composer -f .\php-fpm\dockerfile-php-8.3.14  .
 ```
